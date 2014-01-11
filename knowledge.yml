@@ -131,6 +131,10 @@
 - name: Eclipse
   items:
     - name: task
+- name: Emacs
+  items:
+    - name: yaml-mode
+      link: http://www.emacswiki.org/emacs/YamlMode
 - name: Regex
   items:
     - name: About Regular Expressions
