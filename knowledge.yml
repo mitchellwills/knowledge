@@ -1,0 +1,145 @@
+- name: Web Development
+  items:
+    - name: AngularJS
+      link: http://angularjs.org/
+      description: a javascript web MVC framework
+      items:
+        - name: Getting started
+          link: http://toddmotto.com/ultimate-guide-to-learning-angular-js-in-one-day/
+        - name: ngAnimate
+          link: http://docs.angularjs.org/api/ngAnimate
+          description: angularjs animation module
+          items:
+            - name: Animation in AngularJS 1.2
+              link: http://www.yearofmoo.com/2013/08/remastered-animation-in-angularjs-1-2.html
+        - name: ngRoute
+          items:
+            - name: Route Provider
+              link: http://docs.angularjs.org/api/ngRoute.$routeProvider
+              description: configuring ngRoute
+        - name: directives
+          link: http://docs.angularjs.org/guide/directive
+          items:
+            - name: Recursive directive
+              link: http://stackoverflow.com/questions/19125551/angularjs-understanding-a-recursive-directive
+        - name: angular-slider
+          link: http://ngmodules.org/modules/angular-slider
+          description: an angularjs slider directive
+    - name: CDN
+      items:
+      - name: Google CDN
+        link: https://developers.google.com/speed/libraries/devguide
+        keywords: [angularjs, dojo, jquery, mootools, prototype]
+      - name: Bootstrap CDN
+        link: http://www.bootstrapcdn.com/
+        keywords: [bootstrap, fontawesome, bootswatch]
+    - name: jQuery
+      link: http://jquery.com/
+      description: a cross platform javascript library
+      keywords: []
+    - name: XRegExp
+      link: http://xregexp.com/
+      description: a javascript library that extends built in regex and fixes cross browser differences
+      keywords: [regular, expressions]
+    - name: js-yaml
+      link: https://github.com/nodeca/js-yaml
+      description: javascript yaml parser
+    - name: Bootstrap
+      link: http://getbootstrap.com/
+    - name: FontAwesome
+      link: http://fontawesome.io/
+      description: An icon font
+      keywords: [Bootstrap, font, icon]
+    - name: Google Fonts
+      link: http://www.google.com/fonts
+    - name: Mongoose
+      description: an easy to use web server
+      link: https://code.google.com/p/mongoose/
+      keywords: [portable]
+    - name: Node.js
+      description: chrome based javascript runtime
+      link: http://nodejs.org/
+      items:
+        - name: Grunt
+          description: a javascript task runner
+          keywords: [build]
+          link: http://gruntjs.com/
+          items:
+            - name: Configuring tasks
+              link: http://gruntjs.com/configuring-tasks
+              keywords: [files]
+            - name: Tasks
+              items:
+                - name: jshint
+                  link: https://npmjs.org/package/grunt-contrib-jshint
+                  description: javascript validator task
+                - name: less
+                  link: https://npmjs.org/package/grunt-contrib-less
+                  description: task to compile LESS into CSS
+                - name: ftp-deploy
+                  link: https://github.com/zonak/grunt-ftp-deploy
+                  description: a task to deploy to an ftp server
+                - name: connect
+                  link: https://github.com/gruntjs/grunt-contrib-connect
+                  description: a web server
+                  keywords: [webserver, livereload]
+                - name: watch
+                  link: https://github.com/gruntjs/grunt-contrib-watch
+                  description: a task to monitor files and run tasks when they are modified
+                  keywords: [livereload]
+                - name: string-replace
+                  link: https://github.com/erickrdch/grunt-string-replace
+- name: Java
+  items:
+    - name: JVM
+    - name: Effective Java
+      link: http://www.amazon.com/Effective-Java-Edition-Joshua-Bloch/dp/0321356683
+      type: book
+- name: C++
+  items:
+    - name: Boost
+      link: http://www.boost.org/
+- name: C#
+- name: Python
+  link: http://www.python.org/
+- name: POSIX
+  items:
+    - name: pthreads
+      link: https://computing.llnl.gov/tutorials/pthreads/
+- name: ROS
+  link: http://ros.org
+  items:
+    - name: Installation instructions
+      link: http://wiki.ros.org/ROS/Installation
+    - name: Catkin
+      items:
+        - name: Eclipse
+          items:
+            - name: Create eclipse project
+              link: http://answers.ros.org/question/52013/catkin-and-eclipse/
+            - name: Fix unresolved includes
+              link: http://answers.ros.org/question/61407/standard-system-include-paths-missing-in-eclipse-from-catkin_make/
+    - name: ros_control
+      link: http://wiki.ros.org/ros_control
+      items:
+        - name: ros_control with Gazebo tutorial
+          link: http://gazebosim.org/wiki/Tutorials/1.9/ROS_Control_with_Gazebo
+    - name: ROS Setup Script
+      link: https://gist.github.com/mitchellwills/5944473
+      description: A script designed to allow for easy configuration of a ROS workspace
+- name: Eclipse
+  items:
+    - name: task
+- name: Regex
+  items:
+    - name: About Regular Expressions
+      link: http://nikic.github.io/2012/06/15/The-true-power-of-regular-expressions.html
+    - name: Regex Tool
+      link: http://gskinner.com/RegExr/
+      description: An online tool that allows for regex find/replace
+- name: Software Development
+  items:
+    - name: Clean Code
+      link: http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/
+      type: book
+      description: by Robert C. Martin

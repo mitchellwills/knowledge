@@ -1,0 +1,25 @@
+.main-view{
+    position: absolute;
+    padding-top: 50px; /* bootstrap top navbar padding */
+    width:100%;
+}
+.main-view > div{
+    padding: 20px;
+}
+
+knowledge-item{
+	display: block;
+}
+.knowledge-list > .title{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.knowledge-list > ul > li > knowledge-item > .title{
+	font-weight: bold;
+}
+
+.mysetup-list > .title{
+	font-size: 16px;
+	font-weight: bold;
+}

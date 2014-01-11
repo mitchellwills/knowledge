@@ -1,0 +1,100 @@
+- name: Web Services
+  items:
+    - name: Gmail
+      link: http://gmail.com
+      description: Primary email service
+    - name: Google Calendar
+      link: http://calendar.google.com
+      description: Calendar
+    - name: Google Voice
+      link: http://voice.google.com
+      description: Online text message and voicemail system
+    - name: Social
+      items:
+        - name: Facebook
+          link: http://facebook.com
+        - name: Google+
+          link: http://plus.google.com
+    - name: Feedly
+      link: http://feedly.com
+      description: News aggregator
+    - name: Mint
+      link: http://mint.com
+      description: Money management and budgeting
+- name: Online Tools
+  items:
+    - name: Ninite
+      link: http://ninite.com/
+      description: Online service that generates an installer to quickly install software
+- name: Windows Applications
+  items:
+    - name: Chrome
+      link: http://chrome.google.com
+    - name: Notepad++
+      link: http://notepad-plus-plus.org/
+    - name: Eclipse
+    - name: Cygwin
+      link: http://www.cygwin.com/
+    - name: FileZilla
+      link: https://filezilla-project.org/
+    - name: Paint.Net
+    - name: Inkscape
+    - name: IrfanView
+    - name: Putty
+      link: http://www.chiark.greenend.org.uk/~sgtatham/putty/
+    - name: 7-Zip
+      link: http://www.7-zip.org/
+    - name: Dexpot
+      link: http://dexpot.de/
+      description: Virtual Desktop Manager
+    - name: Flux
+      link: http://justgetflux.com/
+    - name: Foxit Reader
+    - name: VLC
+      link: http://www.videolan.org/vlc/index.html
+    - name: TeraCopy
+      link: http://codesector.com/teracopy
+- name: Android Apps
+  items:
+    - name: feedly
+    - name: DoggCatcher
+    - name: MxPlayer
+    - name: WeatherBug
+    - name: Action Launcher
+    - name: Andie Graph
+    - name: Google Authenticator
+    - name: CalenGoo
+    - name: Chrome
+    - name: ES File Explorer
+    - name: FoxFi
+    - name: GBC A.D.
+    - name: Gmail
+    - name: Google Voice
+    - name: Google Keep
+    - name: LinkedIn
+    - name: Lux
+    - name: Google Maps
+    - name: Facebook
+    - name: Netflix
+    - name: Notification Weather Premium
+    - name: Pandora
+    - name: Quickoffice
+    - name: Spaceteam
+    - name: Splitwise
+    - name: Status Agenda
+    - name: SwiftKey
+    - name: Terminal Emulator
+    - name: TeslaLED
+    - name: Google Translate
+    - name: Google Wallet
+    - name: Wifi Analyzer
+- name: Linux Applications
+  items:
+    - name: Emacs
+    - name: Eclipse
+- name: Hardware
+  items:
+    - name: Lenovo T420
+    - name: Microsoft Surface Pro
+    - name: Nexus 7 (2012)
+    - name: Galexy S4
