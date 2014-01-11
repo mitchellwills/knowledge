@@ -103,6 +103,16 @@ angular.module('knowledge', ['ngRoute'])
       }
       return remainingKeywords;
     }
+    function itemArrayComparator(a, b){
+      if(a.partial && b.partial)
+        return 0;
+      if(!a.partial && !b.partial)
+        return 0;
+      if(a.partial)
+        return 1;
+      if(b.partial)
+        return -1;
+    }
     function searchItemArray(array, keywords){
       var result = [];
       for(var i in array){
@@ -115,6 +125,7 @@ angular.module('knowledge', ['ngRoute'])
           if(matchingSubItems.length>0)
             result.push($.extend({}, item, {items: matchingSubItems, partial: true}));
         }
+        result.sort(itemArrayComparator);
       }
       return result;
     }
