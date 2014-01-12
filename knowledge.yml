@@ -56,6 +56,14 @@
       description: an easy to use web server
       link: https://code.google.com/p/mongoose/
       keywords: [portable]
+    - name: HTML5
+      items:
+        - name: Offline Apps
+          link: http://diveintohtml5.info/offline.html
+        - name: Local Storage
+          link: http://diveintohtml5.info/storage.html
+        - name: History
+          link: http://diveintohtml5.info/history.html
     - name: Node.js
       description: chrome based javascript runtime
       link: http://nodejs.org/
