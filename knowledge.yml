@@ -64,6 +64,8 @@
           link: http://diveintohtml5.info/storage.html
         - name: History
           link: http://diveintohtml5.info/history.html
+        - name: Forms
+          link: http://diveintohtml5.info/forms.html
     - name: Node.js
       description: chrome based javascript runtime
       link: http://nodejs.org/
