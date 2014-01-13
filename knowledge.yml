@@ -126,10 +126,14 @@
       items:
         - name: Eclipse
           items:
+            - name: ROS with Eclipse Information
+              link: http://wiki.ros.org/IDEs#Eclipse
             - name: Create eclipse project
               link: http://answers.ros.org/question/52013/catkin-and-eclipse/
             - name: Fix unresolved includes
               link: http://answers.ros.org/question/61407/standard-system-include-paths-missing-in-eclipse-from-catkin_make/
+            - name: Formatting
+              link: http://wiki.ros.org/IDEs#Auto_Formatting
     - name: ros_control
       link: http://wiki.ros.org/ros_control
       items:
@@ -145,7 +149,6 @@
       description: A script designed to allow for easy configuration of a ROS workspace
 - name: Eclipse
   items:
-    - name: task
 - name: Emacs
   items:
     - name: yaml-mode
