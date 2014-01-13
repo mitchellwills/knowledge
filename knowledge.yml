@@ -135,6 +135,11 @@
       items:
         - name: ros_control with Gazebo tutorial
           link: http://gazebosim.org/wiki/Tutorials/1.9/ROS_Control_with_Gazebo
+        - name: ros_control links
+          link: https://github.com/ros-controls/ros_control/wiki
+          keywords: [tutorials]
+        - name: transmission_interface setup tutorial
+          link: https://github.com/ros-controls/ros_control/wiki/transmission_interface
     - name: ROS Setup Script
       link: https://gist.github.com/mitchellwills/5944473
       description: A script designed to allow for easy configuration of a ROS workspace
