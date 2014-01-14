@@ -12,39 +12,43 @@ angular.module('knowledge', ['ngRoute', 'ngSanitize'])
 		});
 	})
   .service('DataService', ['$http', function($http){
-    function calcArrayKeywords(array){
-      for(var i in array){
-        var item = array[i];
-        calcKeywords(item);
-      }
-    }
-    function calcKeywords(item){
-      var keywords = item.name.split(" ");
-      if(item.keywords)
-        keywords = keywords.concat(item.keywords);
-      if(item.type)
-        keywords.push(item.type);
-      if(item.description)
-        keywords = keywords.concat(item.description.split(" "));
-      arrayToLowercase(keywords);
-      item._keywords = keywords;
-      calcArrayKeywords(item.items);
+    function DeferedData(){
+      this.on = function(callback){
+        this.dataCallback = callback;
+        if('latest' in this)
+          this.dataCallback(this.latest);
+      };
+      this.update = function(newValue){
+        this.latest = newValue;
+        if(this.dataCallback)
+          this.dataCallback(newValue);
+      };
+      this.get = function(){
+        return this.latest;
+      };
     }
     return {
-      mysetup: $http.get('mysetup.yml').then(function(data){
-        return jsyaml.load(data.data);
-      }),
-      knowledge: $http.get('knowledge.yml').then(function(data){
-        var jsObject = jsyaml.load(data.data);
-        calcArrayKeywords(jsObject);
-        return jsObject;
-      })
+      getYAML: function(file){
+        var defer = new DeferedData();
+        if(Modernizr.localstorage){
+          var cachedValue = localStorage.getItem('file/'+file);
+          if(cachedValue)
+            defer.update(jsyaml.load(cachedValue));
+        }
+        $http.get(file).then(function(data){
+          var content = data.data;
+          if(Modernizr.localstorage)
+            localStorage.setItem('file/'+file, content);
+          defer.update(jsyaml.load(content));
+        });
+        return defer;
+      }
     };
   }])
   
   
 	.controller('MySetupCtrl', ['$scope', '$route', 'DataService', function($scope, $route, DataService){
-		DataService.mysetup.then(function(data){
+		DataService.getYAML('mysetup.yml').on(function(data){
       $scope.mysetup = data;
     });
 	}])
@@ -54,9 +58,9 @@ angular.module('knowledge', ['ngRoute', 'ngSanitize'])
     $scope.searchText = $location.search().q || '';
     $scope.firstResult = null;
     
-    DataService.knowledge.then(function(data){
+    DataService.getYAML('knowledge.yml').on(function(data){
+      calcArrayKeywords(data);
       $scope.knowledge = data;
-      $scope.filteredKnowledge = $scope.knowledge;
       updateSearch();
     });
     $scope.$watch('searchText', updateSearch);
@@ -153,6 +157,24 @@ angular.module('knowledge', ['ngRoute', 'ngSanitize'])
           bestSubResult = subResult;
       }
       return bestSubResult;
+    }
+    function calcArrayKeywords(array){
+      for(var i in array){
+        var item = array[i];
+        calcKeywords(item);
+      }
+    }
+    function calcKeywords(item){
+      var keywords = item.name.split(" ");
+      if(item.keywords)
+        keywords = keywords.concat(item.keywords);
+      if(item.type)
+        keywords.push(item.type);
+      if(item.description)
+        keywords = keywords.concat(item.description.split(" "));
+      arrayToLowercase(keywords);
+      item._keywords = keywords;
+      calcArrayKeywords(item.items);
     }
 	}])
   
