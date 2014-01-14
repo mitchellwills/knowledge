@@ -56,6 +56,10 @@
       description: an easy to use web server
       link: https://code.google.com/p/mongoose/
       keywords: [portable]
+    - name: Markdown
+      items:
+        - name: Syntax
+          link: http://daringfireball.net/projects/markdown/syntax
     - name: HTML5
       items:
         - name: Offline Apps
@@ -132,10 +136,16 @@
               link: http://answers.ros.org/question/52013/catkin-and-eclipse/
             - name: Unresolved include dirs to add
               content: |
+                #### Additional Include Directories ####
+                * /usr/include/c++/<version>
+                * /usr/include/c++/<version>/<arch>
+                * /usr/include/c++/<version>/backward
+                * /usr/lib/gcc/<arch>/<version>/include
                 #### EXAMPLE ####
-                * EXAMPLE A
-                * EXAMPLE B
-                * EXAMPLE C
+                * /usr/include/c++/4.6
+                * /usr/include/c++/4.6/x86_64-linux-gnu
+                * /usr/include/c++/4.6/backward
+                * /usr/lib/gcc/x86_64-linux-gnu/4.6/include
             - name: Fix unresolved includes
               link: http://answers.ros.org/question/61407/standard-system-include-paths-missing-in-eclipse-from-catkin_make/
             - name: Formatting
