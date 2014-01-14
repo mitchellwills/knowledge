@@ -130,6 +130,12 @@
               link: http://wiki.ros.org/IDEs#Eclipse
             - name: Create eclipse project
               link: http://answers.ros.org/question/52013/catkin-and-eclipse/
+            - name: Unresolved include dirs to add
+              content: |
+                #### EXAMPLE ####
+                * EXAMPLE A
+                * EXAMPLE B
+                * EXAMPLE C
             - name: Fix unresolved includes
               link: http://answers.ros.org/question/61407/standard-system-include-paths-missing-in-eclipse-from-catkin_make/
             - name: Formatting

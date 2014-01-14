@@ -13,6 +13,7 @@
 			<span style="font-weight:bold;">{{firstResult.result.name}}</span>
 			<span ng-if="firstResult.result.description"> &#8212; {{firstResult.result.description}}</span>
 			<div style="margin-left:20px;"><a ng-if="firstResult.result.link" ng-href="firstResult.result.link">{{firstResult.result.link}}</a></div>
+			<div style="font-size:14px;" class="well  well-sm" ng-if="firstResult.result.contentHTML" ng-bind-html="firstResult.result.contentHTML"></div>
 		</div>
 		<div ng-show="!firstResult || !firstResult.result.link">
 			<span style="vertical-align:middle;">
