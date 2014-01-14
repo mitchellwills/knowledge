@@ -92,7 +92,6 @@ angular.module('knowledge', ['ngRoute', 'ngSanitize'])
       if(firstResult && firstResult.result && firstResult.result.content){
         if(!firstResult.result.contentHTML){
           firstResult.result.contentHTML = markdown.toHTML(firstResult.result.content);
-          console.log(firstResult.result.contentHTML);
         }
       }
     });
