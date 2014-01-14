@@ -78,6 +78,7 @@ angular.module('knowledge', ['ngRoute', 'ngSanitize'])
         $scope.filteredKnowledge = searchItemArray($scope.knowledge, keywords);
         $scope.firstResult = findFirstResult($scope.filteredKnowledge);
       }
+      $location.replace(); //don't keep history of every keystroke, only remember latest query
     }
     $scope.submitSearch = function(){
       if($scope.searchText){
