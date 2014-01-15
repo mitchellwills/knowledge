@@ -1,7 +1,33 @@
 CACHE MANIFEST
 NETWORK:
-/tracking.cgi
+/mysetup.yml
+/knowledge.yml
 CACHE:
-/clock.css
-/clock.js
-/clock-face.jpg
+/app.js
+/favicon.ico
+/index.html
+/itemtemplate.html
+/main.css
+/lib/js-yaml.min.js
+/lib/markdown.js
+/lib/modernizr.js
+/views/list.html
+/views/mysetup.html
+
+
+//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
+
+# bootstrap
+//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css
+//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css
+//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js
+
+# AngularJS
+//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js
+//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-route.js
+//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-sanitize.js
+
+//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css
+//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3
+//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3
+//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3
