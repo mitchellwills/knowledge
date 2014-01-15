@@ -30,15 +30,8 @@ angular.module('knowledge', ['ngRoute', 'ngSanitize'])
     return {
       getYAML: function(file){
         var defer = new DeferedData();
-        if(Modernizr.localstorage){
-          var cachedValue = localStorage.getItem('file/'+file);
-          if(cachedValue)
-            defer.update(jsyaml.load(cachedValue));
-        }
         $http.get(file).then(function(data){
           var content = data.data;
-          if(Modernizr.localstorage)
-            localStorage.setItem('file/'+file, content);
           defer.update(jsyaml.load(content));
         });
         return defer;
