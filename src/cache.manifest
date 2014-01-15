@@ -2,6 +2,7 @@ CACHE MANIFEST
 NETWORK:
 /mysetup.yml
 /knowledge.yml
+*
 CACHE:
 /app.js
 /favicon.ico

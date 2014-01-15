@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+  var strip_manifest_middleware = require('connect-strip-manifest')();
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     jshint: {
@@ -27,6 +28,7 @@ module.exports = function(grunt) {
           livereload: true,
           middleware: function(connect, options){
             return [
+              strip_manifest_middleware,
               connect.static(options.base),
               function(req, res, next){//if couldn't find a file to serve then just serve index.html
                 console.log("Rewriting URL: "+req.url+" -> /");
@@ -40,6 +42,9 @@ module.exports = function(grunt) {
       }
     },
     watch: {
+      gruntfile: {
+        files: 'Gruntfile.js',
+      },
       js: {
         files: 'src/**/*.js',
         tasks: ['jshint'],

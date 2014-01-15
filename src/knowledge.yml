@@ -103,6 +103,10 @@
                   keywords: [livereload]
                 - name: string-replace
                   link: https://github.com/erickrdch/grunt-string-replace
+    - name: 1 & 1 Hosting
+      items:
+        - name: htaccess mod_rewrite issues
+          link: http://stackoverflow.com/questions/8681959/1and1-mod-rewrite-issues
 - name: Java
   items:
     - name: JVM
