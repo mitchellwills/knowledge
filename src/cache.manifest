@@ -1,14 +1,12 @@
 CACHE MANIFEST
-NETWORK:
-/mysetup.yml
-/knowledge.yml
-*
 CACHE:
 /app.js
 /favicon.ico
 /index.html
 /itemtemplate.html
 /main.css
+/mysetup.yml
+/knowledge.yml
 /lib/js-yaml.min.js
 /lib/markdown.js
 /lib/modernizr.js
