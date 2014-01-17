@@ -44,6 +44,9 @@
     - name: js-yaml
       link: https://github.com/nodeca/js-yaml
       description: javascript yaml parser
+    - name: MathJax
+      link: http://www.mathjax.org/
+      description: javascript library to display math expressions on the web
     - name: Bootstrap
       link: http://getbootstrap.com/
     - name: FontAwesome
@@ -186,3 +189,11 @@
       link: http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/
       type: book
       description: by Robert C. Martin
+- name: Math
+  items:
+    - name: Mathics
+      link: http://www.mathics.net/
+      description: Web based computer algebra system
+- name: JaxEdit
+  link: http://jaxedit.com/note/
+  description: online LaTeX editor with instant preview
