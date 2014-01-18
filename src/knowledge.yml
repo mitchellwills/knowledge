@@ -121,6 +121,10 @@
     - name: Boost
       link: http://www.boost.org/
 - name: C#
+  items:
+    - name: PInvoke.net
+      link: http://pinvoke.net/
+      keywords: [native, c++, call]
 - name: PHP
 - name: Python
   link: http://www.python.org/
