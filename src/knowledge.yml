@@ -125,6 +125,10 @@
     - name: PInvoke.net
       link: http://pinvoke.net/
       keywords: [native, c++, call]
+- name: Windows Programming
+  items:
+    - name: Windows API List
+      link: http://msdn.microsoft.com/en-us/library/windows/desktop/ff818516(v=vs.85).aspx
 - name: PHP
 - name: Python
   link: http://www.python.org/
