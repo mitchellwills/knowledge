@@ -120,10 +120,15 @@
   items:
     - name: Boost
       link: http://www.boost.org/
+    - name: cplusplus reference
+      link: http://www.cplusplus.com/reference/
+      search: https://www.google.com/search?btnI&q=site:http%3A%2F%2Fcplusplus.com%2F+%s
 - name: C#
+  keywords: [.net]
   items:
     - name: PInvoke.net
       link: http://pinvoke.net/
+      search: http://pinvoke.net/search.aspx?search=%s
       keywords: [native, c++, call]
 - name: Windows Programming
   items:
@@ -136,6 +141,9 @@
   items:
     - name: pthreads
       link: https://computing.llnl.gov/tutorials/pthreads/
+    - name: Linux man pages
+      link: http://linux.die.net/man
+      search: https://www.google.com/search?btnI&q=site:http%3A%2F%2Flinux.die.net%2Fman+%s
 - name: ROS
   link: http://ros.org
   items:
@@ -189,7 +197,7 @@
     - name: About Regular Expressions
       link: http://nikic.github.io/2012/06/15/The-true-power-of-regular-expressions.html
     - name: Regex Tool
-      link: http://gskinner.com/RegExr/
+      link: http://toolbox.mitchellwills.com/regex.html
       description: An online tool that allows for regex find/replace
 - name: Software Development
   items:

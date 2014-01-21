@@ -3,7 +3,7 @@
 		<div class="form-group">
 			<label for="list-search" class="col-sm-2 control-label">Search: </label>
 			<div class="col-sm-10">
-				<input id="list-search" type="text" size="60" class="form-control" ng-model="searchText">
+				<input id="list-search" type="text" class="form-control" ng-model="searchText">
 			</div>
 		</div>
 	</form>
@@ -12,12 +12,20 @@
 		<div ng-show="firstResult">
 			<span style="font-weight:bold;">{{firstResult.result.name}}</span>
 			<span ng-if="firstResult.result.description"> &#8212; {{firstResult.result.description}}</span>
-			<div style="margin-left:20px;"><a ng-if="firstResult.result.link" ng-href="firstResult.result.link">{{firstResult.result.link}}</a></div>
-			<div style="font-size:14px;" class="well  well-sm" ng-if="firstResult.result.contentHTML" ng-bind-html="firstResult.result.contentHTML"></div>
+			<div style="margin-left:20px;">
+				<div ng-if="firstResult.result.search" style="margin-bottom:10px;">
+					<form class="form-horizontal" ng-submit="submitResultSearch()">
+						<input id="result-search" type="text" size="60" class="form-control" ng-model="resultSearch.text">
+					</form>
+				</div>
+				<a ng-if="firstResult.result.link" ng-href="firstResult.result.link">{{firstResult.result.link}}</a>
+				<div style="font-size:14px;" class="well  well-sm" ng-if="firstResult.result.contentHTML" ng-bind-html="firstResult.result.contentHTML"></div>
+			</div>
+			
 		</div>
 		<div ng-show="!firstResult || !firstResult.result.link">
 			<span style="vertical-align:middle;">
-				Search google for: <span style="font-weight:bold;">{{searchText}}</span>
+				Search Google for: <span style="font-weight:bold;">{{searchText}}</span>
 			</span>
 		</div>
 	</div>

@@ -1,4 +1,5 @@
 <span class="title">
+	<span class="fa" ng-class="{'fa-search': item.search}"></span>
 	<span class="fa" ng-class="{'fa-file-text': item.content}"></span>
 	<span class="fa" ng-class="{'fa-book': item.type=='book', 'fa-youtube-play': item.type=='video'}"></span>
 	<a ng-if="item.link" ng-href="{{item.link}}">{{item.name}}</a>

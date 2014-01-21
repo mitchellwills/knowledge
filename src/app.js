@@ -49,6 +49,7 @@ angular.module('knowledge', ['ngRoute', 'ngSanitize'])
   
 	.controller('KnowledgeListCtrl', ['$scope', '$route', '$location', 'DataService', function($scope, $route, $location, DataService){
     $scope.searchText = $location.search().q || '';
+    $scope.resultSearch = {};
     $scope.firstResult = null;
     
     DataService.getYAML('knowledge.yml').on(function(data){
@@ -85,9 +86,15 @@ angular.module('knowledge', ['ngRoute', 'ngSanitize'])
           window.location = 'https://www.google.com/search?q='+$scope.searchText;
       }
     };
+    $scope.submitResultSearch = function(){
+      if($scope.resultSearch.text){
+        if($scope.firstResult.result && $scope.firstResult.result.search)
+          window.location = $scope.firstResult.result.search.replace("%s", encodeURIComponent($scope.resultSearch.text));
+      }
+    };
     $scope.$watch('firstResult', function(firstResult){
       if(firstResult && firstResult.result && firstResult.result.content){
-        if(!firstResult.result.contentHTML){
+        if(!firstResult.result.contentHTML){//TODO delete old search
           firstResult.result.contentHTML = markdown.toHTML(firstResult.result.content);
         }
       }
