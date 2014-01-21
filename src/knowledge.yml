@@ -210,6 +210,8 @@
     - name: Mathics
       link: http://www.mathics.net/
       description: Web based computer algebra system
+- name: Matlab
+  link: http://www.mathworks.com/help/matlab/
 - name: JaxEdit
   link: http://jaxedit.com/note/
   description: online LaTeX editor with instant preview
