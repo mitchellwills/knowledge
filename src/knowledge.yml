@@ -218,3 +218,9 @@
 - name: JaxEdit
   link: http://jaxedit.com/note/
   description: online LaTeX editor with instant preview
+- name: Git
+  link: http://git-scm.com/documentation
+  items:
+    - name: Learn Git Branching
+      link: http://pcottle.github.io/learnGitBranching/
+      keywords: [tutorial]
