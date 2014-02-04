@@ -173,6 +173,9 @@
               link: http://answers.ros.org/question/61407/standard-system-include-paths-missing-in-eclipse-from-catkin_make/
             - name: Formatting
               link: http://wiki.ros.org/IDEs#Auto_Formatting
+        - name: Catkinization
+          link: http://wiki.ros.org/catkin/migrating_from_rosbuild
+          keywords: [rosbuild, convert, catkinize]
     - name: ros_control
       link: http://wiki.ros.org/ros_control
       items:
