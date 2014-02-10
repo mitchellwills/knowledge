@@ -186,6 +186,10 @@
           keywords: [tutorials]
         - name: transmission_interface setup tutorial
           link: https://github.com/ros-controls/ros_control/wiki/transmission_interface
+    - name: ROS Gazebo
+      items:
+        - name: ROS Simulator Motors and Sensors
+          link: http://gazebosim.org/wiki/Tutorials/1.9/ROS_Motor_and_Sensor_Plugins
     - name: ROS Setup Script
       link: https://gist.github.com/mitchellwills/5944473
       description: A script designed to allow for easy configuration of a ROS workspace
