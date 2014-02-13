@@ -228,3 +228,10 @@
     - name: Learn Git Branching
       link: http://pcottle.github.io/learnGitBranching/
       keywords: [tutorial]
+- name: Virtual Machines
+  items: 
+    - name: Virtualbox
+      link: https://www.virtualbox.org/wiki/Downloads
+      items:
+        - name: Ubunutu in Virtualbox
+          link: http://blog.jdpfu.com/2012/09/14/solution-for-slow-ubuntu-in-virtualbox
