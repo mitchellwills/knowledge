@@ -219,8 +219,8 @@
       description: Web based computer algebra system
 - name: Algorithms
   items:
-    -name: Big O Notation Cheat Sheat
-     link: http://bigocheatsheet.com/
+    - name: Big O Notation Cheat Sheat
+      link: http://bigocheatsheet.com/
 - name: Matlab
   link: http://www.mathworks.com/help/matlab/
 - name: JaxEdit
