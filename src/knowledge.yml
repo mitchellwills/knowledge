@@ -22,6 +22,8 @@
           items:
             - name: Recursive directive
               link: http://stackoverflow.com/questions/19125551/angularjs-understanding-a-recursive-directive
+            - name: Directive scopes
+              link: http://onehungrymind.com/angularjs-sticky-notes-pt-2-isolated-scope/
         - name: angular-slider
           link: http://ngmodules.org/modules/angular-slider
           description: an angularjs slider directive
