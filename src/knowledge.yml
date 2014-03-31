@@ -146,6 +146,10 @@
     - name: Linux man pages
       link: http://linux.die.net/man
       search: https://www.google.com/search?btnI&q=site:http%3A%2F%2Flinux.die.net%2Fman+%s
+- name: Linux
+  items:
+    - name: udev guide
+      link: http://timocharis.com/help/udev.html
 - name: ROS
   link: http://ros.org
   items:
